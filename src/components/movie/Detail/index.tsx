@@ -24,7 +24,7 @@ const MovieDetail = ({ infoFilm }: MovieDetailProps) => {
   return (
     <div className="flex flex-col md:px-4">
       <div className="flex justify-center">
-        <ul className="flex space-x-4 md:space-x-8 cursor-pointer mt-4 md:mt-8 mb-4 md:mb-10 text-sm md:text-xl">
+        <ul className="flex space-x-4 md:space-x-8 cursor-pointer mt-4 md:mt-8 mb-4 md:mb-10 text-sm md:text-xl list-none">
           <li
             className={`px-2 font-normal ${
               selectedTab === 'overview'
