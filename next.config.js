@@ -2,7 +2,7 @@
 module.exports = {
   swcMinify: true,
   poweredByHeader: false,
-  distDir: 'dist',
+  // distDir: 'dist',
   reactStrictMode: true,
   modularizeImports: {
     lodash: {
