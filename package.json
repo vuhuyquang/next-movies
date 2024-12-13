@@ -1,0 +1,69 @@
+{
+  "name": "next-movies",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:test": "NODE_ENV=test next build",
+    "start": "next start",
+    "types-check": "tsc --pretty --noEmit",
+    "lint:prettier": "prettier --check \"src/**/*+(js|jsx|ts|tsx|scss)\" --ignore-path .gitignore",
+    "lint:script": "eslint -c .eslintrc.js \"./src/**/*.{js,ts,tsx}\" --ignore-path .gitignore --ignore-path .eslintignore",
+    "lint:style": "stylelint src/**/*.{css,scss} -i .gitignore -i .stylelintignore",
+    "lint": "npm run lint:script && npm run lint:prettier -- --check && npm run lint:style",
+    "lintfix": "npm run lint:prettier -- --write && npm run lint:script -- --fix && npm run lint:style -- --fix",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.3.1",
+    "@ant-design/nextjs-registry": "^1.0.0",
+    "@reduxjs/toolkit": "^2.2.1",
+    "antd": "^5.15.1",
+    "axios": "^1.6.7",
+    "classnames": "^2.5.1",
+    "date-fns": "^3.3.1",
+    "dompurify": "^3.0.9",
+    "json-bigint": "^1.0.0",
+    "lodash": "^4.17.21",
+    "nanoid": "^5.0.6",
+    "next": "^14.2.5",
+    "next-nprogress-bar": "^2.3.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.1.0",
+    "redux": "^5.0.1",
+    "redux-saga": "^1.3.0",
+    "sanitize-html": "^2.13.1",
+    "sass": "^1.71.1",
+    "tailwindcss": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.25",
+    "@types/react": "^18.2.64",
+    "@types/react-redux": "^7.1.33",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "stylelint": "^16.2.1",
+    "stylelint-config-prettier-scss": "^1.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "typescript": "~5.3.3"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,css,scss}": [
+      "npm run lint"
+    ]
+  }
+}

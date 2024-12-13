@@ -1,0 +1,10 @@
+.logo {
+  width: 4rem;
+  height: 4rem;
+  transition-duration: 500ms;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-0.5rem);
+  }
+}

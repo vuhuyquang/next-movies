@@ -1,0 +1,29 @@
+/* Hiệu ứng animation từ dưới lên */
+@keyframes slide-up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Áp dụng animation cho phần tử */
+.animate-slide-up {
+  animation: slide-up 0.7s ease-out;
+}
+
+.shadow-custom {
+  box-shadow: 300px 0 100px 50px rgb(0 0 0 / 80%);
+}
+
+@media (width >= 1024px) {
+  .lg\:bg-gradient-to-r {
+    --tw-gradient-from: rgb(0 0 0 / 100%);
+    --tw-gradient-stops: rgb(0 0 0 / 100%) 0%, rgb(0 0 0 / 100%) 50%, transparent 100%;
+
+    background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  }
+}

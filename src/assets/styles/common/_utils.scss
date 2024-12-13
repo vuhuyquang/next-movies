@@ -1,0 +1,12 @@
+.app-ref {
+  position: relative;
+
+  .app-ref-mark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2rem;
+    height: 2rem;
+  }
+}
