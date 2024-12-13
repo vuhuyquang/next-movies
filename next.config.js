@@ -3,7 +3,7 @@ module.exports = {
   swcMinify: true,
   poweredByHeader: false,
   distDir: 'dist',
-  reactStrictMode: false,
+  reactStrictMode: true,
   modularizeImports: {
     lodash: {
       transform: 'lodash/{{member}}',
